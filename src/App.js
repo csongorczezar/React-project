@@ -1,6 +1,7 @@
 import React from 'react';
-import MeditationGoal from './MeditationGoal.js';
-import MeditationTime from './MeditationTime.js';
+import MeditationGoal from './Components/MeditationGoal/MeditationGoal';
+import MeditationTime from './Components/MeditationTime/MeditationTime';
+// import '../node_modules/@fortawesome/fontawesome-free/css/all.css'; 
 
 function App() {
   
