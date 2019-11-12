@@ -35,8 +35,14 @@ h1:nth-child(3) {
   color: #DABA3A;
   border: 3px solid #F1CD49;
   padding: 0 0 5px 0;
-  
 }
+.fas {
+  margin: 20px 0 50px 0;
+}
+.fa-arrow-left {
+  margin-right: 320px;
+}
+
 
 
 

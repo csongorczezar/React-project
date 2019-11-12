@@ -16,6 +16,8 @@ function MeditationTime() {
 
 	return (
      	<div className="App">
+      <i className="fas fa-arrow-left"></i>
+      <i className="fas fa-times"></i>
       	<h1>{`How long
        would you like
         to meditate
