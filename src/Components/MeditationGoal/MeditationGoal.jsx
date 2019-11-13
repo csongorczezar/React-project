@@ -1,7 +1,5 @@
 import React from 'react';
 import '../App.css';
-// import '../node_modules/@fortawesome/fontawesome-free/css/all.css'; 
-
 
 function MeditationGoal() {
 
