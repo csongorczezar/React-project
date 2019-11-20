@@ -6,7 +6,7 @@ import '../App.css';
 function MeditationTime() {
 
 	const timeChoices = ["5 MINS", "15 MINS"];
-	const pickYourTimes = timeChoices.map(time =>
+	const meditationLengthSelector = timeChoices.map(time =>
    		<div>
    			<button className="roundButton">-</button>
    			{time}
@@ -22,7 +22,7 @@ function MeditationTime() {
        would you like
         to meditate
         now?`}</h1>
-        {pickYourTimes}
+        {meditationLengthSelector}
      	</div>
   	);
 
