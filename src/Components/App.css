@@ -41,6 +41,14 @@ h1:nth-child(3) {
 }
 .fa-arrow-left {
   margin-right: 320px;
+  color: #D3D6D6;
+}
+.fa-arrow-left:hover {
+  color: #DABA3A;
+}
+#dashboardTitleContainer {
+  text-align: center;
+  font-size: 3vw;
 }
 
 
