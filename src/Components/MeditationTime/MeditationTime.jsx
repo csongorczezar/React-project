@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Dashboard from '../Dashboard/Dashboard'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -18,11 +19,7 @@ function MeditationTime() {
 
 	return (
      	<div className="App">
-      <a >
-
-      <i className="fas fa-arrow-left"></i>
-      </a>
-      <i className="fas fa-times"></i>
+      
       	<h1>{`How long
        would you like
         to meditate
