@@ -1,5 +1,6 @@
 import React from 'react';
-import '../App.css';
+import '../CSS/global-styles.css';
+import './MeditationTime.css';
 import Dashboard from '../Dashboard/Dashboard'
 import { NavLink } from 'react-router-dom';
 

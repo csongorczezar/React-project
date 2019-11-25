@@ -1,0 +1,10 @@
+.fas {
+  margin: 20px 0 50px 0;
+}
+.fa-arrow-left {
+  margin-right: 320px;
+  color: #D3D6D6;
+}
+.fa-arrow-left:hover {
+  color: #DABA3A;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import '../App.css';
+import '../CSS/global-styles.css';
+import './Dashboard.css';
 
 function Dashboard() {
 	return(
