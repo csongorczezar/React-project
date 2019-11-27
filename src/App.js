@@ -13,11 +13,11 @@ function App() {
   return (
   	<BrowserRouter>
 	  	<div>
+	  		<Navigation/>
 	  		<Switch>
+	  			<Route path="/" component={MeditationTime} exact/>
 	      		<Route path="/Dashboard" component={Dashboard}/>
-	      	</Switch>
-	  	 	<Navigation/>
-	     	<MeditationTime/>
+	      	</Switch>	
 	    </div>
     </BrowserRouter>
   );
