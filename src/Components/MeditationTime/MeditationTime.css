@@ -1,0 +1,11 @@
+.roundButton {
+  background-color: #4B4F52;
+  width: 40px;
+  border-radius: 50px;
+  margin: 18px 50px 18px 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #DABA3A;
+  border: 3px solid #F1CD49;
+  padding: 0 0 5px 0;
+}
