@@ -7,27 +7,52 @@ import { NavLink } from 'react-router-dom';
 
 
 
-function MeditationTime() {
+class MeditationTime extends React.Component {
 
-	const timeChoices = ["5 MINS", "15 MINS"];
-	const meditationLengthSelector = timeChoices.map(time =>
-   		<div>
-   			<button className="roundButton">-</button>
-   			{time}
-   			<button className="roundButton">+</button>
-   		</div>
+  constructor() {
+    super()
+    this.state = {
+      meditationQuestion: `How long
+       would you like
+        to meditate
+        now?`,
+      timeChoices: ["5 MINS", "15 MINS"],
+      time: "0 MINS"
+    }
+  }
+
+
+
+    handleClick = () => {
+      this.state.timeChoices.map(time =>
+        
+        this.setState({ meditationQuestion: time })
+      )
+      
+      
+      
+      
+    };
+
+	
+render() {
+
+  const meditationLengthSelector = this.state.timeChoices.map(time =>
+      
+      <div>
+        <button className="roundButton" onClick = {this.handleClick}>-</button>
+        <span>{time}</span>
+        <button className="roundButton" onClick = {this.handleClick}>+</button>
+      </div>
     );
 
 	return (
      	<div className="App">
-      
-      	<h1>{`How long
-       would you like
-        to meditate
-        now?`}</h1>
+      	<h1>{this.state.meditationQuestion}</h1>
         {meditationLengthSelector}
      	</div>
   	);
+}
 
 }
 

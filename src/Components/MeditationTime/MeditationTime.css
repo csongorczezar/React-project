@@ -6,6 +6,14 @@
   font-size: 25px;
   font-weight: bold;
   color: #DABA3A;
-  border: 3px solid #F1CD49;
+  border: 3px solid #DABA3A;
   padding: 0 0 5px 0;
+}
+.roundButton:active {
+	background-color: #DABA3A;
+	color: #4B4F52;
+	outline: none;
+}
+.roundButton:focus {
+	outline: none;
 }
