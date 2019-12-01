@@ -5,6 +5,9 @@
   margin-right: 320px;
   color: #D3D6D6;
 }
-.fa-arrow-left:hover {
+.fa-times {
+  color: #D3D6D6;
+}
+.fa-arrow-left:hover, .fa-times:hover {
   color: #DABA3A;
 }

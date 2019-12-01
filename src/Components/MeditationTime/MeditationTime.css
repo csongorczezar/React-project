@@ -13,7 +13,21 @@
 	background-color: #DABA3A;
 	color: #4B4F52;
 	outline: none;
+  cursor: pointer;
 }
 .roundButton:focus {
 	outline: none;
+}
+.roundButton:hover {
+  cursor: pointer;
+}
+#meditationQuestion {
+  height: 25vh;
+}
+span {
+  display: inline-block;
+  width: 5%;
+}
+.largeFont::first-letter {
+  font-size: 8vw;
 }

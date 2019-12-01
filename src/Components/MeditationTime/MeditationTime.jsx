@@ -16,39 +16,43 @@ class MeditationTime extends React.Component {
        would you like
         to meditate
         now?`,
-      timeChoices: ["5 MINS", "15 MINS"],
+      timeChoices: [15, 5],
       time: "0 MINS"
     }
+
+    this.handleClick = this.handleClick.bind(this);
+    
   }
 
 
 
-    handleClick = () => {
+    handleClick = (event) => {
       this.state.timeChoices.map(time =>
-        
-        this.setState({ meditationQuestion: time })
-      )
-      
-      
-      
-      
+        this.setState({ meditationQuestion: time + ` MINS`} )
+      )   
     };
+
+   
+       
+    
 
 	
 render() {
+
+  var className = this.state.meditationQuestion.length < 10 ? 'largeFont': 0;
 
   const meditationLengthSelector = this.state.timeChoices.map(time =>
       
       <div>
         <button className="roundButton" onClick = {this.handleClick}>-</button>
-        <span>{time}</span>
+        <span>{time + ` MINS`}</span>
         <button className="roundButton" onClick = {this.handleClick}>+</button>
       </div>
     );
 
 	return (
      	<div className="App">
-      	<h1>{this.state.meditationQuestion}</h1>
+      	<h1 id = "meditationQuestion" className = {className} >{this.state.meditationQuestion}</h1>
         {meditationLengthSelector}
      	</div>
   	);
