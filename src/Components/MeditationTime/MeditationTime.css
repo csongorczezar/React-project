@@ -24,10 +24,11 @@
 #meditationQuestion {
   height: 25vh;
 }
-span {
+p {
   display: inline-block;
   width: 5%;
 }
 .largeFont::first-letter {
   font-size: 8vw;
 }
+

@@ -11,24 +11,25 @@ class MeditationTime extends React.Component {
 
   constructor() {
     super()
-    this.state = {
-      meditationQuestion: `How long
+    
+    const timeQuestion = `How long
        would you like
         to meditate
-        now?`,
-      timeChoices: [15, 5],
-      time: "0 MINS"
-    }
+        now?`;
 
-    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      meditationTime: timeQuestion,
+      timeChoices: [15, 5]
+    }
     
   }
 
 
 
     handleClick = (event) => {
-      this.state.timeChoices.map(time =>
-        this.setState({ meditationQuestion: time + ` MINS`} )
+      const {meditationTime, timeChoices } = this.state;
+      timeChoices.map(time =>
+        this.setState({ meditationTime: time + ` MINS`} )
       )   
     };
 
@@ -39,20 +40,22 @@ class MeditationTime extends React.Component {
 	
 render() {
 
-  var className = this.state.meditationQuestion.length < 10 ? 'largeFont': 0;
+  const {meditationTime, timeChoices } = this.state;
 
-  const meditationLengthSelector = this.state.timeChoices.map(time =>
+  var className = meditationTime.length < 10 ? 'largeFont': 0;
+
+  const meditationLengthSelector = timeChoices.map(time =>
       
       <div>
-        <button className="roundButton" onClick = {this.handleClick}>-</button>
-        <span>{time + ` MINS`}</span>
-        <button className="roundButton" onClick = {this.handleClick}>+</button>
+        <button className="roundButton" onClick={this.handleClick}>-</button>
+        <p>{time + ` MINS`}</p>
+        <button className="roundButton" onClick={this.handleClick}>+</button>
       </div>
     );
 
 	return (
      	<div className="App">
-      	<h1 id = "meditationQuestion" className = {className} >{this.state.meditationQuestion}</h1>
+      	<h1 id="meditationTime" className={className}>{meditationTime}</h1>
         {meditationLengthSelector}
      	</div>
   	);
