@@ -48,7 +48,7 @@ render() {
       
       <div>
         <button className="roundButton" onClick={this.handleClick}>-</button>
-        <p>{time + ` MINS`}</p>
+        <p>{time} MINS</p>
         <button className="roundButton" onClick={this.handleClick}>+</button>
       </div>
     );
