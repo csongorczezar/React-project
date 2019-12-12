@@ -28,9 +28,10 @@ class MeditationTime extends React.Component {
 
     handleClick = (event) => {
       const {meditationTime, timeChoices } = this.state;
-      timeChoices.map(time =>
-        this.setState({ meditationTime: time + ` MINS`} )
-      )   
+      // timeChoices.map(time =>
+      //   this.setState({ meditationTime: time + ` MINS`} )
+      // )   
+      this.setState({meditationTime: 5 + ` MINS`})
     };
 
    
@@ -42,7 +43,7 @@ render() {
 
   const {meditationTime, timeChoices } = this.state;
 
-  var className = meditationTime.length < 10 ? 'largeFont': 0;
+  var meditationTimeClass = meditationTime.length < 10 ? 'largeFont': 0;
 
   const meditationLengthSelector = timeChoices.map(time =>
       
@@ -55,7 +56,7 @@ render() {
 
 	return (
      	<div className="App">
-      	<h1 id="meditationTime" className={className}>{meditationTime}</h1>
+      	<h1 id="meditationTime" className={meditationTimeClass}>{meditationTime}</h1>
         {meditationLengthSelector}
      	</div>
   	);
