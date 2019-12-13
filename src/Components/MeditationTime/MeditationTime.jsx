@@ -45,6 +45,8 @@ render() {
 
   var meditationTimeClass = meditationTime.length < 10 ? 'largeFont': 0;
 
+  var toggleButton = meditationTime.length < 10 ? 'showButton': 'hideButton';
+
   const meditationLengthSelector = timeChoices.map(time =>
       
       <div>
@@ -58,6 +60,7 @@ render() {
      	<div className="App">
       	<h1 id="meditationTime" className={meditationTimeClass}>{meditationTime}</h1>
         {meditationLengthSelector}
+        <button id="submitButton" className={toggleButton}><i class="fas fa-check"></i></button>
      	</div>
   	);
 }
