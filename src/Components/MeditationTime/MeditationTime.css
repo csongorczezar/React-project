@@ -29,10 +29,10 @@ p {
   width: 5%;
 }
 .largeFont::first-letter {
-  font-size: 8vw;
+  font-size: 125px;
 }
-#submitButton {
-  margin-top: 9vh;
+.submitButton {
+  margin-top: 7%;
   background-color: #DABA3A;
   width: 260px;
   border-radius: 50px;
