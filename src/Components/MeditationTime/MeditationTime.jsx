@@ -43,9 +43,9 @@ render() {
 
   const {meditationTime, timeChoices } = this.state;
 
-  let meditationTimeClass = meditationTime.length < 7 ? 'largeFont': 0;
+  const meditationTimeClass = meditationTime.length < 7 ? 'largeFont': 0;
 
-  let toggleButton = meditationTime.length < 7 ? 'showButton submitButton': 'hideButton submitButton';
+  const toggleButton = meditationTime.length < 7 ? 'showButton ': 'hideButton ';
 
   const meditationLengthSelector = timeChoices.map(time =>
       
@@ -58,9 +58,9 @@ render() {
 
 	return (
      	<div className="App">
-      	<h1 id="meditationTime" className={meditationTimeClass}>{meditationTime}</h1>
+      	<h1 className={`meditationTime ${meditationTimeClass}`}>{meditationTime}</h1>
         {meditationLengthSelector}
-        <button className={toggleButton}><i class="fas fa-check"></i></button>
+        <button className={`submitButton ${toggleButton}`}><i class="fas fa-check"></i></button>
      	</div>
   	);
 }

@@ -21,7 +21,7 @@
 .roundButton:hover {
   cursor: pointer;
 }
-#meditationTime {
+.meditationTime {
   height: 25vh;
 }
 p {
