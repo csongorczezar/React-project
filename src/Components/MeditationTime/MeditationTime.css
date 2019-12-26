@@ -21,7 +21,7 @@
 .roundButton:hover {
   cursor: pointer;
 }
-#meditationTime {
+.meditationTime {
   height: 25vh;
 }
 p {
@@ -29,6 +29,29 @@ p {
   width: 5%;
 }
 .largeFont::first-letter {
-  font-size: 8vw;
+  font-size: 125px;
+}
+.submitButton {
+  margin-top: 7%;
+  background-color: #DABA3A;
+  width: 260px;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 0px 0 0px 0;
+  outline: none;
+  border: 0;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 40px;
+}
+i.fa-check {
+  color: #4B4F52;
+  margin-top: 0px;
+}
+.hideButton {
+  display: none;
+}
+.showButton {
+  display: inline-block;
 }
 
